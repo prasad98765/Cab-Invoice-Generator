@@ -90,6 +90,7 @@ public class InvoiceServiceTest {
             InvoiceSummary summary = invoiceServices.getInvoiceSummary(userId);
             Assert.assertEquals(expectedInvoiceSummary, summary);
         } catch (InvoiceServicesException e) {
+            Assert.assertEquals(InvoiceServicesException.ExceptionType.INVALID_USER_ID,e.type);
         }
     }
 
@@ -106,6 +107,21 @@ public class InvoiceServiceTest {
         try {
             Assert.assertEquals(expectedInvoiceSummary, summary);
         }catch (AssertionError e){
+
+        }
+    }
+
+    @Test
+    public void givenNullData_ShouldReturnInvoiceSummaryUsingMockito() {
+        try {
+            String userId = "xyz.com";
+            InvoiceServices invoiceServices = new InvoiceServices(rideRepositorymock);
+            InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 30.0);
+            when(rideRepositorymock.getRides(null)).thenThrow(new NullPointerException("Invalid User id"));
+            InvoiceSummary summary = invoiceServices.getInvoiceSummary(null);
+            Assert.assertEquals(expectedInvoiceSummary, summary);
+        } catch (InvoiceServicesException e) {
+            Assert.assertEquals(InvoiceServicesException.ExceptionType.INVALID_USER_ID, e.type);
         }
     }
 }

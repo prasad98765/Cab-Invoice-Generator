@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InvoiceServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-02-06T09:17:32" hostname="admin1-desktop" time="0.1">
+<testsuite name="InvoiceServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-02-06T09:40:23" hostname="admin1-desktop" time="0.112">
   <properties/>
-  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare" classname="InvoiceServiceTest" time="0.083"/>
-  <testcase name="givenUserIdAndRides_ShouldReturnInvoiceSummary" classname="InvoiceServiceTest" time="0.001"/>
-  <testcase name="givenMultipleRides_ShouldReturnTotalSummary" classname="InvoiceServiceTest" time="0.001"/>
-  <testcase name="givenUserIdAndRides_ShouldReturnInvoiceSummaryUsingMock" classname="InvoiceServiceTest" time="0.01"/>
-  <testcase name="givenWrongNumberOfRecord_ShouldReturnInvoiceSummaryUsingMock" classname="InvoiceServiceTest" time="0.001"/>
-  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare" classname="InvoiceServiceTest" time="0.0"/>
-  <testcase name="givenWrongUserId_ShouldReturnInvoiceSummaryUsingMock" classname="InvoiceServiceTest" time="0.003"/>
-  <system-out><![CDATA[[MockitoHint] InvoiceServiceTest.givenWrongUserId_ShouldReturnInvoiceSummaryUsingMock (see javadoc for MockitoHint):
-[MockitoHint] 1. Unused -> at InvoiceServiceTest.givenWrongUserId_ShouldReturnInvoiceSummaryUsingMock(InvoiceServiceTest.java:89)
+  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare" classname="InvoiceServiceTest" time="0.087"/>
+  <testcase name="givenUserIdAndRides_ShouldReturnInvoiceSummary" classname="InvoiceServiceTest" time="0.0"/>
+  <testcase name="givenUserIdAndRides_ShouldReturnInvoiceSummaryUsingMockito" classname="InvoiceServiceTest" time="0.011"/>
+  <testcase name="givenWrongUserId_ShouldReturnInvoiceSummaryUsingMockito" classname="InvoiceServiceTest" time="0.004"/>
+  <testcase name="givenMultipleRides_ShouldReturnTotalSummary" classname="InvoiceServiceTest" time="0.0"/>
+  <testcase name="givenNullData_ShouldReturnInvoiceSummaryUsingMockito" classname="InvoiceServiceTest" time="0.002"/>
+  <testcase name="givenWrongNumberOfRecord_ShouldReturnInvoiceSummaryUsingMock" classname="InvoiceServiceTest" time="0.003"/>
+  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare" classname="InvoiceServiceTest" time="0.001"/>
+  <system-out><![CDATA[[MockitoHint] InvoiceServiceTest.givenWrongUserId_ShouldReturnInvoiceSummaryUsingMockito (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at InvoiceServiceTest.givenWrongUserId_ShouldReturnInvoiceSummaryUsingMockito(InvoiceServiceTest.java:89)
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
