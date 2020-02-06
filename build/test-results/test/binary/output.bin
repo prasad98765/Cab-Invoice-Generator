@@ -1,0 +1,3 @@
+u[MockitoHint] InvoiceServiceTest.givenWrongUserId_ShouldReturnInvoiceSummaryUsingMock (see javadoc for MockitoHint):
+‚[MockitoHint] 1. Unused -> at InvoiceServiceTest.givenWrongUserId_ShouldReturnInvoiceSummaryUsingMock(InvoiceServiceTest.java:89)
+
